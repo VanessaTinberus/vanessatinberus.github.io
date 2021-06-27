@@ -1,4 +1,4 @@
-let myFlashcards[ 
+let myFlashcards=[ 
 {
     'question':'What is 3+5?',
     'answer':'Eight.'
