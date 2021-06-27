@@ -15,7 +15,7 @@ let myFlashcards=[
 
 
 let i=0;
-let ifAsked=False;
+let ifAsked=false;
 
 
 function changeQuestion(){
@@ -24,17 +24,17 @@ function changeQuestion(){
         i=0;
     } else {
         document.getElementById("question").innerHTML = myFlashcards[i].question;
-        ifAsked=True;
+        ifAsked=true;
     }
     //document.getElementById("question").innerHTML = 'please check the answer first.';
 }
 
 
 function changeAnswer(){
-    if (ifAsked==True){
+    if (ifAsked==true){
     document.getElementById("answer").innerHTML = myFlashcards[i].answer;
         //only allow to reveal the answer when the question is changed.
-        ifAsked=False;
+        ifAsked=false;
         ++i;
     } else {
     document.getElementById("answer").innerHTML = 'please change the question first.';
