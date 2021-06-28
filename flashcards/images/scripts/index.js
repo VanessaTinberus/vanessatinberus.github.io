@@ -25,6 +25,9 @@ function changeQuestion(){
     //only allow to change the question when the answer is revealed.
     if (i == myFlashcards.length){
         i=0;
+        document.getElementById("question").innerHTML = myFlashcards[i].question;
+        document.getElementById("image").src = myFlashcards[i].link;
+        ifAsked=true;
    } else{
         document.getElementById("question").innerHTML = myFlashcards[i].question;
         document.getElementById("image").src = myFlashcards[i].link;
