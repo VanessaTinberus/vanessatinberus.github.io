@@ -18,11 +18,16 @@ let i=0;
 let ifAsked=false;
 
 
+function alertQuestion(){
+    document.getElementById("alert").innerHTML = 'Please CLICK on the question.';
+}
+
+
 function changeQuestion(){
     //only allow to change the question when the answer is revealed.
     if (i == myFlashcards.length){
         i=0;
-    } else {
+   } else{
         document.getElementById("question").innerHTML = myFlashcards[i].question;
         ifAsked=true;
     }
@@ -30,8 +35,10 @@ function changeQuestion(){
 }
 
 
+
 function changeAnswer(){
-    if (ifAsked==true){
+    //alert(ifAsked);
+    if (ifAsked == true){
     document.getElementById("answer").innerHTML = myFlashcards[i].answer;
         //only allow to reveal the answer when the question is changed.
         ifAsked=false;
