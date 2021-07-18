@@ -1,18 +1,18 @@
 let myFlashcards=[ 
 {
-    'question':'What is 3+5?',
-    'answer':'Eight.',
-    'link': 'images/arithmetic.jpeg'
-},
-{
-    'question':'What color is the sky?',
-    'answer':'Blue.',
-    'link': 'images/sky.jpeg'
-},
-{
-    'question':'Is ice cold?',
+    'question':'Does the sun rise in the east?',
     'answer':'Yes.',
-    'link': 'images/ice-cubes.jpeg'
+    'link': 'images/sunrise.jpeg'
+},
+{
+    'question':'Is New York the capital of the U.S.A?',
+    'answer':'No.',
+    'link': 'images/new-york.jpg'
+},
+{
+    'question':'How many days are there in March?',
+    'answer':'31.',
+    'link': 'images/march.jpeg'
 }
 ];
 
@@ -46,6 +46,6 @@ function changeAnswer(){
         ifAsked=false;
         ++i;
     } else {
-    document.getElementById("answer").innerHTML = 'please click on the question first.';
+    document.getElementById("button").innerHTML = 'please click on the question first.';
     }
 }
