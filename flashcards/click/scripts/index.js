@@ -14,14 +14,13 @@ let myFlashcards=[
 ];
 
 
-let i=0;
-let ifAsked=false;
-
-
 function alertQuestion(){
     document.getElementById("alert").innerHTML = 'Please CLICK on the question.';
 }
 
+let i=0;
+//set an indicator variable
+let ifAsked=false;
 
 function changeQuestion(){
     //only allow to change the question when the answer is revealed.
